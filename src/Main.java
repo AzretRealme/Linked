@@ -9,7 +9,7 @@
         public static void main(String[] args) {
           LinkedHashMap<Integer, Message> map = new LinkedHashMap<>();
           map.put(1, new Message(12, "Hi", "Karl", "Anna", true,  LocalDateTime.of(2222, Month.NOVEMBER, 2, 2, 2, 2),  LocalDateTime.of(2222, Month.DECEMBER, 2, 2, 2, 2)));
-           // LocalDateTime.of(2222, Month.NOVEMBER, 2, 2, 2, 2);
+           
 
             for(Map.Entry<Integer,Message> i: map.entrySet()){
                 Integer key = i.getKey();
