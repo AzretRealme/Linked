@@ -23,7 +23,11 @@ import java.time.LocalDateTime;
             this.sentDate = sentDate;
             this.readDate = readDate;
         }
-
+        public String toString(){
+            return "Message{" + "id='"+ id + ",msg="+ msg+ ",sender=" + sender +
+                     ", receiver=" + receiver + ", accessOrder=" + accessOrder+
+                     ", sentDate=" + sentDate + ", readDate=" + readDate;
+        }
         public long getId() {
             return id;
         }
@@ -72,4 +76,5 @@ import java.time.LocalDateTime;
             this.readDate = readDate;
         }
     }
+
 
