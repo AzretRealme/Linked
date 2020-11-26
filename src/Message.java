@@ -8,24 +8,23 @@ import java.time.LocalDateTime;
         private LocalDateTime readDate; //- дата прочтения сообщения
         private  String sender; // имя отправителя
         private  String receiver; //- имя получателя
-        private boolean accessOrder;
 
         public Message(){
 
         }
 
-        public Message(long id, String msg, String sender, String receiver, boolean accessOrder, LocalDateTime sentDate, LocalDateTime readDate) {
+        public Message(long id, String msg, String sender, String receiver, LocalDateTime sentDate, LocalDateTime readDate) {
             this.id = id;
             this.msg = msg;
             this.sender = sender;
             this.receiver = receiver;
-            this.accessOrder = accessOrder;
+            //this.accessOrder = accessOrder;
             this.sentDate = sentDate;
             this.readDate = readDate;
         }
         public String toString(){
             return "Message{" + "id='"+ id + ",msg="+ msg+ ",sender=" + sender +
-                     ", receiver=" + receiver + ", accessOrder=" + accessOrder+
+                     ", receiver=" + receiver +
                      ", sentDate=" + sentDate + ", readDate=" + readDate;
         }
         public long getId() {
@@ -53,13 +52,7 @@ import java.time.LocalDateTime;
             this.receiver = receiver;
         }
 
-        public boolean isAccessOrder() {
-            return accessOrder;
-        }
-
-        public void setAccessOrder(boolean accessOrder) {
-            this.accessOrder = accessOrder;
-        }
+    
         public LocalDateTime getSentDate() {
             return sentDate;
         }
