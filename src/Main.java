@@ -37,6 +37,10 @@
             map1.put(7, new Message(129, "Hey Guys", "Bad", "Aida", LocalDateTime.of(2222, Month.NOVEMBER, 2, 2, 2, 2),  LocalDateTime.of(2222, Month.DECEMBER, 2, 2, 2, 2)));
             map1.put(8, new Message(121, "Hi", "Karl", "Aiperi", LocalDateTime.of(2222, Month.NOVEMBER, 2, 2, 2, 2),  LocalDateTime.of(2222, Month.DECEMBER, 2, 2, 2, 2)));
 
+            map1.get(6);
+            map1.get(7);
+            map1.get(4);
+            
             for(Map.Entry<Integer,Message> i: map1.entrySet()){
                 Integer key = i.getKey();
                 Message value = i.getValue();
